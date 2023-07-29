@@ -1,0 +1,53 @@
+/*General*/
+:root {
+    --white: #FFF;
+    --primary: #2A6CEA;
+    --extralight-gray: #F6F8FA;
+    /* --font-text: 18px;
+    --font-usual: 20px;
+    --font-title-768: 32px;
+    --font-title: 40px;
+    --font-h1: 60px; */
+    --size-desktop: 1920px;
+    --size-tablet: 768px;
+    --size-mobile-first: 375px;
+    --size-mobile-second: 320px;
+    --background-1920: url(../img/Lunch_atop_a_Skyscraper_Desktop.jpg), lightgray 50% / cover no-repeat;
+    --background-768: url(../img/Lunch_atop_a_Skyscraper_Tablet.jpg), lightgray 50% / cover no-repeat;
+    --background-375: url(../img/Lunch_atop_a_Skyscraper_Mobile_1.jpg), lightgray 50% / cover no-repeat;
+    --background-320: url(../img/Lunch_atop_a_Skyscraper_Mobile_2.jpg), lightgray 50% / cover no-repeat;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: var(--size-desktop);
+    margin: 0 auto;
+    min-height: 80px;
+  }
+  
+  html {
+    scroll-behavior: smooth; 
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    height: 4613px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    color: lightgray;
+  }
+    
+  ul {
+    list-style-type: none;
+  }
+  
