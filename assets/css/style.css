@@ -485,3 +485,75 @@ h6 {
     border-radius: 10px;
 }
 
+.issue-section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer {
+    width: 1008px;
+    height: 792px;
+    margin-top: 80px;
+    flex-shrink: 0;
+}
+
+.line {
+    width: 1008px;
+    height: 1px;
+    flex-shrink: 0;
+    background: var(--extralight-gray, #F6F8FA);
+}
+
+.issue-title {
+    margin-bottom: 41px;
+}
+
+.issue-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1008px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.issue-text {
+    width: 936px;
+    color: var(--black, #191C1F);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.img-plus {
+    margin-left: 48px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: var(--black, #191C1F);
+}
+
+.open-text {
+    width: 936px;
+    color: var(--dark-gray, #5E646A);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.issue-box:hover p {
+    color: var(--primary, #2A6CEA);
+}
+
+.issue-box:hover img { 
+    filter: invert(33%) sepia(55%) saturate(3848%) hue-rotate(211deg) brightness(95%) contrast(92%);
+}
