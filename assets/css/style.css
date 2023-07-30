@@ -6,6 +6,7 @@
     --extralight-gray: #F6F8FA;
     --light-gray: #ECEFF2;
     --black: #191C1F;
+    --dark-gray: #5E646A;
     --size-desktop: 1920px;
     --size-tablet: 768px;
     --size-mobile-first: 375px;
@@ -37,7 +38,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    /* background: lightgray; */
+    background-color: var(--light-gray, #ECEFF2);
 }
     
 ul {
@@ -49,6 +50,14 @@ ul {
     margin: 0 auto;
 }
 
+.wrapper {
+    background-color: var(--white, #FFF);
+    height: 4613px;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
   
 /*Header*/
 
@@ -237,7 +246,7 @@ h5 {
     line-height: 24px;;
 }
 
-h2 {
+.section-title {
     color: var(--black, #191C1F);
     text-align: center;
     font-family: Graphik LCG;
@@ -273,7 +282,7 @@ h6 {
     flex-direction: column;
     left: 352px;
     right: 352px;
-    margin-top: 150px;
+    margin-top: 120px;
     align-items: center; 
     justify-content: center;
 }
@@ -328,53 +337,151 @@ h6 {
     line-height: 28px;
 }
 
-
-/* .third-section {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    left: 352px;
-    right: 352px;
+.questions-section {
+    width: 1920px;
+    height: 564px;
     margin-top: 80px;
+    background-color: var(--extralight-gray, #F6F8FA);;
 }
 
-.third-title {
-    color: var(--black, #191C1F);
-    font-family: Graphik LCG;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-}
-
-.third-wrapper {
-    width: 1216px;
-    height: 448px;
+.questions-items {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    width: 1238px;
+    height: 462px;
+    bottom: 45px;
+    left: 341px;
+    right: 341px;
+    gap: 32px;
 }
 
-.third-text {
+.questions-title {
+    margin-top: 57px;
+    /* margin-bottom: 32px; */
+}
+
+
+.img-vector {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.questions-item-one {
+    display: flex;
+    width: 341px;
+    height: 316px;
+    padding: 22px 22px 62px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.questions-item-two {
+    display: flex;
+    width: 341px;
+    height: 316px;
+    padding: 22px 22px 38px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+.questions-item-three {
+    display: flex;
+    width: 341px;
+    height: 316px;
+    padding: 22px 22px 110px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card-one {
+    display: flex;
+    width: 297px;
+    height: 232px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.card-two {
+    display: flex;
+    width: 297px;
+    height: 256px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.card-three {
+    display: flex;
+    width: 297px;
+    height: 184px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.wrapper-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.city {
+    align-self: stretch;
     color: var(--dark-gray, #5E646A);
     font-family: Graphik LCG;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 16px;
+    margin-top: 4px; 
 }
 
-.men-img {
-    width: 592px;
-    height: 448px;
-    margin: 0;
-    padding: 0;
+.eclipse {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    width: 108px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-top: -4%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.truck-img {
-    width: 592px;
-    height: 448px;
-    margin: 0;
-    padding: 0;
-} */
+.eclipse span {
+    width: 8px;
+    height: 8px;
+    background: #C2C8CD;
+    border-radius: 10px;
+  }
+  
+.dot.active {
+    width: 8px;
+    height: 8px;
+    background: var(--primary, #2A6CEA);
+    border-radius: 10px;
+}
+
