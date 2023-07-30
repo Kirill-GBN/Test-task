@@ -557,3 +557,63 @@ h6 {
 .issue-box:hover img { 
     filter: invert(33%) sepia(55%) saturate(3848%) hue-rotate(211deg) brightness(95%) contrast(92%);
 }
+
+.inform-section {
+    width: 1920px;
+    height: 662px;
+    flex-shrink: 0;
+    background: var(--extralight-gray, #F6F8FA);
+    margin-top: 80px;
+}
+
+.info {
+    width: 1216px;
+    height: 527px;
+    flex-shrink: 0;
+    margin-top: 68px;
+    margin-bottom: 67px;
+    margin-left: 352px;
+    margin-right: 352px;
+}
+
+.wrapper-info {
+    display: flex;
+    width: 1216px;
+    height: 245px;
+    flex-shrink: 0;
+    gap: 32px;
+    margin-bottom: 37px;
+}
+
+.inform-title {
+    width: 592px;
+    color: var(--black, #191C1F);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 17px;
+}
+
+.inform-text {
+    width: 592px;
+    color: var(--black, #191C1F);
+    font-family: Graphik LCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.text-one {
+    width: 592px;
+    height: 189px;
+    flex-shrink: 0;
+}
+
+.text-two {
+    width: 592px;
+    height: 245px;
+    flex-shrink: 0;
+}
