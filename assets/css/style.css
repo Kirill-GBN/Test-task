@@ -197,7 +197,7 @@ h5 {
     width: 1216px;
     height: 281px;
     position: relative;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
     left: 352px;
@@ -263,3 +263,118 @@ h6 {
 .img-item{
     margin-bottom: 16px;
 }
+
+.third-section {
+    width: 1216px;
+    height: 448px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: 352px;
+    right: 352px;
+    margin-top: 150px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.text-wrapper {
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 32px;
+    
+}
+
+.img-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.men-img {
+    position: absolute;
+    width: 592px;
+    height: 448px;
+    top: 0;
+    left: 0;
+}
+
+.truck-img {
+    width: 592px;
+    height: 448px;
+    top: 0;
+    left: 0;
+}
+
+.third-title {
+    color: var(--black, #191C1F);
+    font-family: Graphik LCG;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.third-text {
+    color: var(--dark-gray, #5E646A);
+    font-family: Graphik LCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/* .third-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: 352px;
+    right: 352px;
+    margin-top: 80px;
+}
+
+.third-title {
+    color: var(--black, #191C1F);
+    font-family: Graphik LCG;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.third-wrapper {
+    width: 1216px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.third-text {
+    color: var(--dark-gray, #5E646A);
+    font-family: Graphik LCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.men-img {
+    width: 592px;
+    height: 448px;
+    margin: 0;
+    padding: 0;
+}
+
+.truck-img {
+    width: 592px;
+    height: 448px;
+    margin: 0;
+    padding: 0;
+} */
