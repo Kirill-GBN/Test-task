@@ -25,7 +25,8 @@
   
   
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    height: 100%; 
 }
   
 body {
@@ -46,17 +47,21 @@ ul {
 }
 
 .container {
-    width: var(--size-desktop);
+    max-width: 1920px;
     margin: 0 auto;
+    min-height: 50px;
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white, #FFF);
     height: 4613px;
     width: 1920px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    min-height: 100%;
 }
   
 /*Header*/
@@ -109,6 +114,10 @@ ul {
 
 
 /*Main*/
+
+.main-box {
+    flex: 1 1 auto;
+}
 
 .main-container {
     display: flex;
@@ -202,6 +211,8 @@ ul {
     line-height: 24px;
 }
 
+/*Preview*/
+
 .preview-section {
     width: 1216px;
     height: 281px;
@@ -273,6 +284,8 @@ h6 {
     margin-bottom: 16px;
 }
 
+/*Third section*/
+
 .third-section {
     width: 1216px;
     height: 448px;
@@ -282,7 +295,7 @@ h6 {
     flex-direction: column;
     left: 352px;
     right: 352px;
-    margin-top: 120px;
+    margin-top: 80px;
     align-items: center; 
     justify-content: center;
 }
@@ -337,6 +350,8 @@ h6 {
     line-height: 28px;
 }
 
+/*Questions section*/
+
 .questions-section {
     width: 1920px;
     height: 564px;
@@ -358,7 +373,7 @@ h6 {
 
 .questions-title {
     margin-top: 57px;
-    /* margin-bottom: 32px; */
+    margin-bottom: 32px;
 }
 
 
@@ -487,6 +502,8 @@ h6 {
     border-radius: 10px;
 }
 
+/*Issue section*/
+
 .issue-section {
     margin-left: auto;
     margin-right: auto;
@@ -560,6 +577,8 @@ h6 {
     filter: invert(33%) sepia(55%) saturate(3848%) hue-rotate(211deg) brightness(95%) contrast(92%);
 }
 
+/*Inform section*/
+
 .inform-section {
     width: 1920px;
     height: 662px;
@@ -619,6 +638,8 @@ h6 {
     height: 245px;
     flex-shrink: 0;
 }
+
+/*Form section*/
 
 .form-section {
     margin-left: auto;
@@ -735,4 +756,34 @@ input[type=text], [type=tel] {
     font-style: normal;
     font-weight: 400;
     line-height: 32px; 
+}
+
+/*Footer*/
+
+footer {
+    width: 1920px;
+    height: 88px;
+    flex-shrink: 0;
+}
+
+.footer-line {
+    margin-top: 10px;
+    width: 1920px;
+    height: 1px;
+    flex-shrink: 0;
+    background: var(--light-gray, #ECEFF2);
+}
+
+.desc {
+    color: var(--black, #191C1F);
+    text-align: center;
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 827px;
+    margin-right: 827px;
 }
